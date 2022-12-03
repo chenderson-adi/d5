@@ -1,0 +1,8 @@
+copen command window in this directory
+
+
+enter command:
+pyuic5 -x d5.ui -o d5.py
+
+          ^infile  ^outfile
+

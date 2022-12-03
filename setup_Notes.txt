@@ -1,0 +1,5 @@
+Notes:
+
+pip install flask
+pip install Flask-Login
+pip install flask flask-sqlalchemy

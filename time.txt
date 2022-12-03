@@ -1,0 +1,25 @@
+
+7/12/2022 - 1909 - Serpa 12:00 - 16:45
+7/13/2022 - 1909 - Serpa 9:00 - 14:00 14:30-16:00
+7/14/2022 - 1909 - Serpa 9:00 - 18:00 Laptop VM setup - login to servo
+7/15/2022 - 1909 - Serpa 9:00 - 15:00 Screen Update/password reset - change photoeyes order:   
+
+
+
+
+
+7/20/2022	3505	ABF 3505 - 9AM 11AM  OSHA Meeting
+
+
+7/27/2022 WED	9-6 - redo estop wiring and devices
+7/28/2022 THURS 9-6 - finish estop wiring and devices
+7/29/2022 FRIDAY 9-6 - change plc program to accept new etop logic and integrate with machine reset.
+
+
+8/4/2022 thursday  9-8:30 PLC support; rewrote a large percentage of diverter code (slow testing)
+
+8/8/2022 monday	9-6:00    re-did rails, worked on changing 3 to 2 lanes and understanting servo divert with recipies
+8/9/2022 tuesday 9-3pm  no lunch
+8/10/2022 wednesday 9:30-4:30 no lunch
+8/11/2022 thursday  7:am-5:30 pm 1/2 hour lunch
+8/12/2022 Friday 7:am-300pm 1/2 hour lunch - -tried to run 6 pack, wired up abs encoders, repaired photoeye, found program non functional for 6 pack
