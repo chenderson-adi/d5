@@ -6,7 +6,7 @@ import serial
 import math
 import paho.mqtt.client as mqtt
 from PyQt5 import QtWidgets,QtCore,QtGui
-from PyQt5.QtCore import pyqtSignal,QTime,QTimer
+from PyQt5.QtCore import Qt,pyqtSignal,QTime,QTimer
 from PyQt5.QtWidgets import QApplication, QWidget, QListWidget,QTreeWidget,QTreeWidgetItem
 from configparser import ConfigParser
 from PyQt5.uic import loadUi
@@ -28,10 +28,13 @@ hexmode     = False                 # Flag to enable hex display
 #*******************************************************************************Main Window*******************************************************************************
 class clsMainWindow(QWidget):
     def __init__(self):
-        super(clsMainWindow, self).__init__()
+        #super(clsMainWindow, self).__init__()
+        super().__init__()
+        self.SetupUI()
+    def SetupUI(self):
         flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowStaysOnTopHint)
         self.setWindowFlags(flags)
-        loadUi(os.path.join(GlobalVars.Home, 'MainWindow.ui'),self) 
+        loadUi(os.path.join(GlobalVars.Home, 'MainWindow.ui'),self)
         #self.lblElapsedTime.setText("")
         self.cmdLogin.clicked.connect(self.gotoLogin)
         self.cmdSetup.clicked.connect(self.gotoSetupWindow)
@@ -408,8 +411,7 @@ class SetupWindow(QWidget):
     trigger = pyqtSignal()
     def __init__(self):
         super(SetupWindow, self).__init__()
-        flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowStaysOnTopHint)
-        self.setWindowFlags(flags)
+        self.setWindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowStaysOnTopHint)
         loadUi(os.path.join(GlobalVars.Home, 'SetupWindow.ui'),self)
         self.tabWidget.tabBarClicked.connect(self.handle_tabbar_clicked)
         self.cmdExit.clicked.connect(self.gotoMainWindow)
